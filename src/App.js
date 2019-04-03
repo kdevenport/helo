@@ -6,16 +6,14 @@ import Nav from '../src/Components/Nav/Nav';
 import Form from '../src/Components/Form/Form';
 import Dashboard from '../src/Components/Dashboard/Dashboard';
 import Auth from '../src/Components/Auth/Auth';
+import routes from './routes';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Post />
-        <Nav />
-        <Form />
-        <Dashboard />
-        <Auth />
+       { routes }
+       <Nav />
       </div>
     );
   }
